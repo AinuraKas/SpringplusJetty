@@ -1,0 +1,58 @@
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+    <display-name>Jetty example</display-name>
+
+   
+    <servlet>
+    <servlet-name>na</servlet-name>
+    <servlet-class>com.ainura.dbread.NewAnons</servlet-class>
+    
+</servlet>
+<servlet-mapping>
+    <servlet-name>na</servlet-name>
+    <url-pattern>/newanons</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+    <servlet-name>sbt</servlet-name>
+    <servlet-class>com.ainura.dbread.DBreadSBT</servlet-class>
+    
+</servlet>
+<servlet-mapping>
+    <servlet-name>sbt</servlet-name>
+    <url-pattern>/dbreadsbt</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>rgn</servlet-name>
+    <servlet-class>com.ainura.dbread.DBreadRGN</servlet-class>
+    
+</servlet>
+<servlet-mapping>
+    <servlet-name>rgn</servlet-name>
+    <url-pattern>/dbreadrgn</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>tm</servlet-name>
+    <servlet-class>com.ainura.dbread.DBreadTM</servlet-class>
+    
+</servlet>
+<servlet-mapping>
+    <servlet-name>tm</servlet-name>
+    <url-pattern>/dbreadtm</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ac</servlet-name>
+    <servlet-class>com.ainura.dbread.AnChecked</servlet-class>
+    
+</servlet>
+<servlet-mapping>
+    <servlet-name>ac</servlet-name>
+    <url-pattern>/ach</url-pattern>
+</servlet-mapping>
+
+</web-app>
